@@ -1,7 +1,7 @@
 # Build a Tribute Page
 
 ## Project Sccreenshots
-![Page Screenshot]()
+![Page Screenshot](https://user-images.githubusercontent.com/86337318/230719079-a300ecbb-0532-42a3-9099-12851a39e485.jpg)
 
 ## Objective:
 Build an app that is functionally similar to https://tribute-page.freecodecamp.rocks
