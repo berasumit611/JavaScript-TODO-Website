@@ -1,3 +1,6 @@
+//Author - Sumit Bera
+//Version - 1.0
+//---------- START ----------
 //JS load afterothes finish loading
 window.addEventListener('load',()=>{
     const form=document.querySelector('#new-task-form');
