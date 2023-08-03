@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+  }
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    overflow: hidden;
+    color:#103783;
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+
+    background: hsla(221, 45%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+
+}
+main{
+  border-radius: 0.8rem;
+  
+  background: hsla(186, 33%, 94%, 1);
+
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+
+    margin-left: 10rem;
+    width: 40vw;
+    height: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+h1,h2{
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+p{
+  font-size: 1.5rem;
+}
+input,button{
+  text-transform: capitalize;
+    border: none;
+    outline: none;
+}
+.input-container > #new-task-form{
+    display: flex;
+    gap: 1rem;
+}
+#new-task-input{
+    width: 90%;
+    background-color:transparent;
+    color: #141414;
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 0.08rem solid #1525da;
+}
+#new-task-submit{
+ 
+    color: #141414;
+    background-color: #919bff;
+    font-size: 3rem;
+    width: 4rem;
+    height:4rem;
+    border: 0.08rem solid #919bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#new-task-submit:hover,#new-task-submit:active{
+  background-color: #6b76f7;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+    border-bottom: 0.08rem solid #1525da;
+  
+}
+
+.filters{
+  display: flex;
+  gap: 2rem;
+}
+.filters span{
+    font-size: 1.8rem;
+    color: #5b5b5b;
+    cursor: pointer;
+    text-align: left;
+  }
+
+.filters span.active{
+    color: orangered;
+  }
+
+#tasks{
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 50vh;
+    
+  }
+  
+  #tasks::-webkit-scrollbar{
+    width: 5px;
+  }
+  #tasks::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 25px;
+  }
+  #tasks::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 25px;
+  }
+
+.task{
+  background-color:#b8c4df;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem; 
+  
+} 
+
+.task i{
+    font-size: 2rem;
+}
+.task  input{
+    background-color: transparent;
+    color: #141414;
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 0.08rem solid #1525da;
+}
+.actions{
+    background-color: #a1b0d4;
+    display: flex;
+}
+.actions > i{
+  font-size: 2rem;
+}
+.edit,.delete,.check{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+/* checked functionality-toggle */
+.checked{
+    font-style: italic;
+    text-decoration:0.1rem solid #000000 line-through;
+}
+.color{
+    color: rgb(0, 56, 0);
+}
+
